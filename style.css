@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --cor-dourada: #D9AF62;
+    --cor-cinza-escuro: #6b6e7a;
+    --cor-cinza-claro: #e0e0e0;
+    --cor-branca: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-cinza-claro);
+    font-family: "Quicksand", sans-serif;
+    color: black;
+    line-height: 1.6;
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--cor-cinza-escuro);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 100;
+    color: var(--cor-dourada);
+}
+
+.main-nav {
+    display: flex;
+    gap: 5rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    color: var(--cor-branca);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 972px;
+    margin: 3px 79px;
+    padding: 60px 0;
+    gap: 78px;
+}
+
+.container h1 {
+    font-size: 2.2rem;
+    color: var(--cor-dourada);
+}
+
+.container p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 20px 0;
+    color: var(--cor-cinza-escuro);
+}
+
+.hero {
+    background: linear-gradient(to right, #f9f9f9, #ffffff);
+    text-align: left;
+    padding: 77px 140px;
+    border-bottom: 2px solid var(--cor-dourada);
+}
+
+.hero-image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.hero-content img {
+    width: 150px;
+    height: 70px;
+}
+
+.btn-whatsapp {
+    background-color: var(--cor-dourada);
+    color: var(--cor-branca);
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--cor-cinza-escuro);
+    color: var(--cor-branca);
+}
+
+.conteudo {
+    background: linear-gradient(to right, #f9f9f9, #ffffff);
+    display: flex;
+    flex-direction: column;
+    
+    padding-right: 20px;
+
+}
