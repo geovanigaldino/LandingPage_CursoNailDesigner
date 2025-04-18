@@ -6,7 +6,9 @@
     <title>Curso de Nails Designer - Ana Paula</title>
     <link rel="stylesheet" href="assets/styles/style.css"/>
     <link rel="stylesheet" href="assets/styles/media-queries.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <!-- Cabeçalho -->
     <header class="main-header">
@@ -19,6 +21,7 @@
 
     <!-- Conteúdo Principal -->
     <main>
+        <!-- Seção Hero -->
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
@@ -40,10 +43,9 @@
                     <img src="assets/img/foto-anapaula.JPG" alt="Foto de Ana Paula">
                 </div>
             </div>
-
         </section>
 
-        <!-- Seção Conteúdo -->
+        <!-- Seção Conteúdo do Curso -->
         <section class="course-content" id="content">
             <div class="course-content__image">
                 <img src="assets/img/aula.jpg" alt="">
@@ -61,61 +63,75 @@
         </section>
 
         <!-- Seção Cursos -->
-        <section id="cursos">
-            <div class="container">
-                <h2>Nossos Cursos</h2>
-                <div class="cursos">
+        <section id="courses" class="courses-section">
+            <div class="courses-container">
+                <h2 class="courses-section__title">Nossos Cursos</h2>
+                <p class="course-description">
+                    Nossos cursos são indicados tanto para quem está começando e deseja dominar as técnicas essenciais com segurança, quanto para profissionais que já atuam e buscam elevar a qualidade das técnicas e da estrutura.                            
+                </p>
+
+                <div class="courses-section__list">
                     <!-- Card Curso Iniciante -->
-                    <div class="card">
-                        <h3>Curso Iniciante</h3>
-                        <p>
-                            Para quem está começando e quer dominar as técnicas essenciais 
-                            com segurança.
-                        </p>
-                        <ul>
-                            <li>Aula 100% prática</li>
-                            <li>Aplicação com 1 extensor</li>
-                            <li>Formatos de salão</li>
-                            <li>Lixamento técnico</li>
-                            <li>Decorações modernas</li>
-                        </ul>
-                    </div>
-                    
+                    <article class="course-card">
+                        <div>
+                            <h3 class="course-card__title">Curso Iniciante</h3>
+                            <ul class="course-card__topics">
+                                <li>Aula 100% prática</li>
+                                <li>Aplicação com 1 extensor</li>
+                                <li>Formatos de salão</li>
+                                <li>Lixamento técnico</li>
+                                <li>Decorações modernas</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="assets/img/iniciante.jpg" alt="Foto Nails Designer iniciante">
+                        </div>
+                    </article>
+        
                     <!-- Card Curso Aperfeiçoamento -->
-                    <div class="card">
-                        <h3>Curso de Aperfeiçoamento</h3>
-                        <p>
-                            Para quem já atua e quer elevar a qualidade das técnicas e estrutura.
-                        </p>
-                        <ul>
-                            <li>Aula prática e teórica</li>
-                            <li>Estrutura correta</li>
-                            <li>Lixamento técnico avançado</li>
-                            <li>Formatos e decorações de salão</li>
-                        </ul>
-                    </div>
+                    <article class="course-card">
+                        <div>
+                            <h3 class="course-card__title">Curso de Aperfeiçoamento</h3>
+                            <ul class="course-card__topics">
+                                <li>Aula prática e teórica</li>
+                                <li>Estrutura correta</li>
+                                <li>Lixamento técnico avançado</li>
+                                <li>Formatos e decorações de salão</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="assets/img/profissional.jpg" alt="Foto Nails Designer profissional">
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- Seção Contato -->
-        <section id="contato">
-            <div class="container">
-                <h2>Fale com a gente</h2>
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <h2 class="contact-section__title">Fale com a gente</h2>
                 <a href="https://wa.me/55SEUNUMERO?text=Oi,+quero+saber+mais+sobre+o+curso+de+Nails+Designer!" 
-                   class="btn-whatsapp" 
-                   target="_blank">
+                   class="contact-section__button btn-whatsapp" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
                     Chamar no WhatsApp
                 </a>
             </div>
         </section>
+
+        <!-- Botão Flutuante do WhatsApp -->
+        <a href="https://wa.me/55SEUNUMERO?text=Oi,+quero+saber+mais+sobre+o+curso+de+Nails+Designer!" 
+           class="whatsapp-float" 
+           target="_blank" 
+           rel="noopener noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+        </a>
     </main>
 
     <!-- Rodapé -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Curso de Nails Designer | Desenvolvido por [Seu Nome]</p>
-        </div>
+        <p>&copy; 2025 Curso de Nails Designer | Desenvolvido por <a href="https://geovanigaldino.github.io/projeto-devlinks/" target="_blank">Geovani Galdino</a></p>
     </footer>
 </body>
 </html>

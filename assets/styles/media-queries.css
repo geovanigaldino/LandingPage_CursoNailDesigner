@@ -1,3 +1,6 @@
+/* ========== RESPONSIVE STYLES ========== */
+
+/* Tablet Landscape (1024px and below) */
 @media (max-width: 1024px) {
     .container {
         margin: 3px 40px;
@@ -13,8 +16,33 @@
         gap: 4rem;
         text-align: center;
     }
+
+    .course-card {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 30px 20px;
+    }
+
+    .course-description {
+        font-size: 1.1rem;
+    }
+
+    .contact-section {
+        padding: 50px 20px;
+    }
+    
+    .contact-section__title {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        padding: 18px;
+        margin-top: 35px;
+        font-size: 0.95rem;
+    }
 }
 
+/* Tablet Portrait (768px and below) */
 @media (max-width: 768px) {
     .main-nav {
         gap: 2.5rem;
@@ -36,6 +64,7 @@
         height: 56px;
     }
 
+    /* Course Content Adjustments */
     .course-content__title {
         font-size: 1.6rem;
     }
@@ -48,9 +77,51 @@
     .course-content__list li::before {
         font-size: 1.2em;
     }
+
+    .courses-section__title {
+        font-size: 1.8rem;
+    }
+
+    .course-card__title {
+        font-size: 1.3rem;
+    }
+
+    .course-description {
+        font-size: 1rem;
+    }
+
+    .course-card {
+        padding: 25px 15px;
+    }
+
+    .contact-section {
+        padding: 40px 15px;
+    }
+
+    .contact-section__title {
+        font-size: 1.6rem;
+    }
+
+    .contact-section__button,
+    .btn-whatsapp {
+        padding: 16px 24px;
+        font-size: 0.95rem;
+    }
+
+    footer {
+        padding: 15px 10px;
+        margin-top: 30px;
+        font-size: 0.9rem;
+    }
+    
+    footer a {
+        padding: 1px 3px;
+    }
 }
 
+/* Mobile Large (480px and below) */
 @media (max-width: 480px) {
+    /* Header Adjustments */
     .main-header {
         padding: 0.8rem;
     }
@@ -60,12 +131,14 @@
         font-size: 0.9rem;
     }
     
+    /* Layout Adjustments */
     .container {
         margin: 3px 0px;
         padding: 30px 0;
         gap: 20px;
     }
     
+    /* Typography Adjustments */
     .container h1 {
         font-size: 1.8rem;
     }
@@ -74,6 +147,7 @@
         font-size: 1rem;
     }
     
+    /* Hero Section Adjustments */
     .hero {
         padding: 50px 28px;
     }
@@ -83,23 +157,117 @@
         height: 47px;
     }
     
+    /* Button Adjustments */
     .btn-whatsapp {
         padding: 10px 20px;
         font-size: 0.9rem;
     }
+
+    .courses-section {
+        padding: 40px 15px;
+    }
+
+    .courses-section__list {
+        grid-template-columns: 1fr;
+    }
+
+    .course-card {
+        gap: 1.5rem;
+        padding: 20px;
+    }
+
+    .course-card__title {
+        font-size: 1.2rem;
+    }
+
+    .course-description {
+        font-size: 0.95rem;
+    }
+
+    .contact-section__title {
+        font-size: 1.4rem;
+    }
+
+    .contact-section__button,
+    .btn-whatsapp {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 0.9rem;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 24px;
+    }
+
+    .whatsapp-float img {
+        width: 65%;
+        height: 65%;
+    }
+
+    footer {
+        padding: 12px 8px;
+        margin-top: 25px;
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    
+    footer a {
+        padding: 1px 2px;
+        border-radius: 3px;
+    }
 }
 
+/* Mobile Small (360px and below) */
 @media (max-width: 360px) {
+    /* Navigation Adjustments */
     .main-nav {
         gap: 1rem;
         font-size: 0.8rem;
     }
     
+    /* Typography Adjustments */
     .container h1 {
         font-size: 1.6rem;
     }
     
     .container p {
         font-size: 0.9rem;
+    }
+
+    .courses-section {
+        padding: 30px 10px;
+    }
+    
+    .courses-section__title {
+        font-size: 1.5rem;
+    }
+    
+    .courses-section__list {
+        grid-template-columns: 1fr;
+    }
+    
+    .course-description {
+        font-size: 0.95rem;
+    }
+    
+    .course-card__topics li {
+        font-size: 0.85rem;
+    }
+
+    footer {
+        padding: 10px 5px;
+        font-size: 0.8rem;
+    }
+    
+    footer br {
+        display: none; 
+    }
+    
+    footer a {
+        display: inline; 
     }
 }
