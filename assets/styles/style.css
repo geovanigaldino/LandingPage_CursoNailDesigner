@@ -104,11 +104,49 @@ body {
     color: var(--cor-branca);
 }
 
-.conteudo {
-    background: linear-gradient(to right, #f9f9f9, #ffffff);
+/* Section Content */
+.course-content {
     display: flex;
-    flex-direction: column;
-    
-    padding-right: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #f9f9f9, #ffffff);
+}
 
+.course-content__image img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.course-content__title {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--cor-dourada);
+    margin-bottom: 20px;
+}
+
+.course-content__list {
+    list-style: none;
+    color: var(--cor-cinza-escuro);
+    margin-bottom: 20px;
+    
+    li {
+        padding: 8px 0;
+        position: relative;
+        padding-left: 25px;
+        
+        &::before {
+            content: "•";
+            color: var(--cor-dourada);
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
 }
