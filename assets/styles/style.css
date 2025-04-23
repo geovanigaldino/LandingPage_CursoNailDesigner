@@ -1,6 +1,4 @@
-/* ========== BASE STYLES ========== */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
+/* Base Styles */
 :root {
     --cor-dourada: #D9AF62;
     --cor-cinza-escuro: #6b6e7a;
@@ -14,14 +12,23 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Alta';
+    src: url('fonts/Alta_regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+
 body {
     background-color: var(--cor-cinza-claro);
-    font-family: "Quicksand", sans-serif;
+    font-family: "Alta", sans-serif;
     color: black;
     line-height: 1.6;
 }
 
-/* ========== HEADER STYLES ========== */
+/* Header Styles */
 .main-header {
     position: fixed;
     top: 0;
@@ -51,7 +58,7 @@ body {
     color: var(--cor-branca);
 }
 
-/* ========== LAYOUT UTILITIES ========== */
+/* Layout Utilities */
 .container {
     display: flex;
     width: 100%;
@@ -61,7 +68,7 @@ body {
     gap: 78px;
 }
 
-/* ========== HERO SECTION ========== */
+/* Hero Section */
 .hero {
     background: linear-gradient(to right, #f9f9f9, #ffffff);
     text-align: left;
@@ -93,7 +100,7 @@ body {
     height: 70px;
 }
 
-/* ========== BUTTON STYLES ========== */
+/* BUTTON STYLES */
 .btn-whatsapp {
     background-color: var(--cor-dourada);
     color: var(--cor-branca);
@@ -109,7 +116,11 @@ body {
     color: var(--cor-branca);
 }
 
-/* ========== COURSE CONTENT SECTION ========== */
+/* COURSE SECTION */
+.courses-container {
+    padding: 30px;
+}
+
 .course-content {
     display: flex;
     flex-direction: row;
@@ -118,6 +129,7 @@ body {
     gap: 8rem;
     padding: 60px 20px;
     background: linear-gradient(to right, #f9f9f9, #ffffff);
+    border-bottom: 2px solid var(--cor-dourada);
 }
 
 .course-content__image img {
@@ -156,7 +168,6 @@ body {
     transform: translateY(-50%);
 }
 
-/* ========== COURSES SECTION ========== */
 .courses-section {
     background-color: #fdfdfd;
     padding: 60px 20px;
@@ -207,8 +218,8 @@ body {
 .course-description {
     font-size: 1.2rem;
     color: var(--cor-cinza-escuro);
-    margin-bottom: 20px;
-    padding: 10px;
+    margin-bottom: 4px;
+    padding: 30px;
     line-height: 1.5;
     text-align: center;
     font-weight: 600;

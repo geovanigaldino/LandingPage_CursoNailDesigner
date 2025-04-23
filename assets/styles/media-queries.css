@@ -1,4 +1,4 @@
-/* ========== RESPONSIVE STYLES ========== */
+/* RESPONSIVE STYLES */
 
 /* Tablet Landscape (1024px and below) */
 @media (max-width: 1024px) {
@@ -110,7 +110,6 @@
 
     footer {
         padding: 15px 10px;
-        margin-top: 30px;
         font-size: 0.9rem;
     }
     
@@ -210,7 +209,6 @@
 
     footer {
         padding: 12px 8px;
-        margin-top: 25px;
         font-size: 0.85rem;
         line-height: 1.5;
     }
