@@ -14,7 +14,7 @@
     .course-content {
         flex-direction: column;
         gap: 4rem;
-        text-align: center;
+        
     }
 
     .course-card {
@@ -37,7 +37,7 @@
 
     footer {
         padding: 18px;
-        margin-top: 35px;
+        margin-top: 2px;
         font-size: 0.95rem;
     }
 }
@@ -72,6 +72,7 @@
     .course-content__list li {
         font-size: 1rem;
         padding-left: 20px;
+        font-weight: bold;
     }
 
     .course-content__list li::before {
@@ -181,6 +182,7 @@
 
     .course-description {
         font-size: 0.95rem;
+        text-align: justify;
     }
 
     .contact-section__title {
@@ -190,8 +192,9 @@
     .contact-section__button,
     .btn-whatsapp {
         width: 100%;
-        padding: 14px 20px;
+        padding: 12px;
         font-size: 0.9rem;
+        text-align: center;
     }
 
     .whatsapp-float {
